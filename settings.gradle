@@ -1,0 +1,5 @@
+rootProject.name = 'quizzo'
+
+include ':core'
+include ':core-datatypes'
+

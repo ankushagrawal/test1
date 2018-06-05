@@ -1,0 +1,23 @@
+group 'com.quizzo'
+
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply from: 'codestyle.gradle'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {}
+
+allprojects {
+    task wrapper(type: Wrapper) {
+        gradleVersion = '2.14'
+    }
+}
